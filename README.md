@@ -1,10 +1,22 @@
 # Raspi5 RTL-SDR Multi Receiver – QO-100 DATV with 1–4 RTL-SDR sticks on a Raspberry Pi 5
 
+> **Hinweis / Note:** Der Dienst kann bis zu **10 RTL-SDR-Sticks** verwalten (mit aktivem USB-3-Hub). Mit **4 Sticks** ist der Raspberry Pi 5 je nach Datenrate (Symbolrate der empfangenen Signale) aber schon gut ausgelastet – im Zweifel weniger Sticks je Pi und lieber mehrere Pis (per MQTT) benutzen.
+> The service can handle up to **10 RTL-SDR sticks** (with an active USB 3 hub), but with **4 sticks** the Raspberry Pi 5 is already well loaded, depending on the data rate of the received signals - use fewer sticks per Pi and several Pis (via MQTT) instead.
+> Der MultiPlayer wurde bisher nur unter **Ubuntu** getestet. / The MultiPlayer has only been tested on **Ubuntu** so far.
+
 **Receive several QO-100 narrowband DATV signals (DVB-S2) at once with 1–4 cheap RTL-SDR sticks (up to 10 with an active USB-3 hub)** on a headless Raspberry Pi 5 and serve them to your home network.
 Each stick gets its own UDP multicast video stream; the service finds the signals itself (BATC spectrum), assigns them to free sticks, decodes call sign, MER and level, and watches the beacon.
 Watch the streams in VLC, in the **MultiPlayer** (one player per stick) or in the **leandvb-GUI**.
 
 *Deutsch:* Ein Raspberry Pi 5 empfängt mit 1–4 RTL-SDR-Sticks gleichzeitig mehrere QO-100-DATV-Signale und stellt sie im Heimnetz bereit. Ausführliche Anleitung: [`RTL-SDR-datvRX-Dienst/ANLEITUNG.html`](RTL-SDR-datvRX-Dienst/ANLEITUNG.html).
+
+## Overview / Überblick
+
+![Raspi5 RTL-SDR Multi Receiver: QO-100, Pi 5 with 4 sticks, web page](bilder/multiplayer_hinweis.png)
+
+![Handy-Webseite: Tippen + VLC am Handy](bilder/handy_hinweis.png)
+
+![MultiPlayer auf dem PC (nur unter Ubuntu getestet)](bilder/tesla_hinweis.png)
 
 ![One Raspberry Pi 5 with 1–4 sticks](bilder/pi_sticks.svg)
 
