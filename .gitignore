@@ -1,0 +1,19 @@
+# nicht veroeffentlichen (Liste aus .veroeffentlichen.json "ausschliessen")
+*.log
+*.log.*
+*.csv
+bak/
+__pycache__/
+*.ini
+*.pyc
+zapper_einstellungen.json
+zapper_messwerte.json
+BilderV/
+RTL-SDR-datvRX-Dienst/dienst.conf
+verteiler_protokoll.log*
+# interne Notizen (Heimatpfade, interne Adressen)
+prog.txt
+programme.txt
+RTL-SDR-datvRX-Dienst/prog.txt
+MQTT_UDP_Abstimmung.md
+/datvrx
